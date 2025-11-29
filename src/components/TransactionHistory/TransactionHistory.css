@@ -145,3 +145,28 @@
 .transactions-list::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+
+/* Aggiungi queste regole */
+.transaction-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.transaction-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.transaction-status.failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.transaction-gateway {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  background: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
