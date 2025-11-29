@@ -1,0 +1,155 @@
+.pos-keyboard {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.pos-keyboard.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.keyboard-display {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-family: 'Courier New', monospace;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.keyboard-display .currency {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+  margin-right: 8px;
+}
+
+.keyboard-display .amount {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.keyboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.key {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+.key-number {
+  background: white;
+  color: #333;
+  border: 2px solid #dee2e6;
+}
+
+.key-number:hover:not(:disabled) {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.key-decimal {
+  background: #e9ecef;
+  color: #495057;
+  border: 2px solid #ced4da;
+}
+
+.key-clear {
+  background: #dc3545;
+  color: white;
+  border: 2px solid #dc3545;
+}
+
+.key-clear:hover:not(:disabled) {
+  background: #c82333;
+  border-color: #bd2130;
+}
+
+.enter-button {
+  width: 100%;
+  height: 70px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.enter-button:hover:not(:disabled) {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.enter-button:active {
+  transform: translateY(0);
+}
+
+.enter-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.key:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+@media (max-width: 768px) {
+  .pos-keyboard {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  .key {
+    height: 70px;
+    font-size: 22px;
+  }
+  
+  .enter-button {
+    height: 80px;
+    font-size: 24px;
+  }
+  
+  .keyboard-display {
+    min-height: 70px;
+  }
+  
+  .keyboard-display .currency {
+    font-size: 28px;
+  }
+  
+  .keyboard-display .amount {
+    font-size: 32px;
+  }
+}

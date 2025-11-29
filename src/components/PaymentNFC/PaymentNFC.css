@@ -1,0 +1,120 @@
+.pos-container {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.pos-header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.pos-header h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+.amount-display {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  margin: 10px 0;
+}
+
+.nfc-indicator {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.status-message {
+  margin: 0 20px 20px 20px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid transparent;
+}
+
+.status-message.success {
+  background: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.status-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+.status-message.info {
+  background: #cce7ff;
+  color: #004085;
+  border-color: #b3d7ff;
+}
+
+.status-message.waiting {
+  background: #fff3cd;
+  color: #856404;
+  border-color: #ffeaa7;
+  animation: pulse 2s infinite;
+}
+
+.nfc-simulator {
+  padding: 10px;
+  text-align: center;
+}
+
+.simulate-nfc-btn {
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.simulate-nfc-btn:hover {
+  background: #0056b3;
+}
+
+
+.amount-display {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.keyboard-display .amount {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.key-decimal {
+  background: #6c757d !important;
+  color: white !important;
+  border: 2px solid #6c757d !important;
+  cursor: not-allowed !important;
+  opacity: 0.7 !important;
+}
